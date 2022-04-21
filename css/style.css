@@ -1,0 +1,161 @@
+body {
+  font-family: "맑은 고딕", "Malgun Gothic", 돋움, Dotum, AppleSDGothic, Tahoma, Helvetica, sans-serif;
+  color: #434343;
+  font-size: 14px;
+}
+
+/* header */
+header {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.header-top {
+  height: 35px;
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* header-로고 */
+.header-top .logo {
+  display: flex;
+  align-items: center;
+}
+.header-top .logo h1 {
+  display: none;
+}
+
+/* header-메뉴 */
+.header-top .nav {
+  display: flex;
+}
+.header-top ul {
+  display: flex;
+  align-items: center;
+}
+.header-top li {
+  margin-right: 15px;
+}
+.header-top li:first-child {
+  margin-left: 15px;
+}
+.header-top .line::after {
+  content: "|";
+}
+.header-top li a {
+  text-decoration-line: none;
+  color: #434343;
+}
+.header-top .nav-search img {
+  width: 20px;
+}
+
+/* 로그인, 인증센터 */
+header .header-bottom {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.header-bottom li {
+  border: 1px solid #DDDDDD;
+  background-color: #FFFFFF;
+  padding: 7px;
+}
+
+/* 슬라이드쇼 */
+.slideshow {
+  height: 420px;
+  background-color: #E1EBF4;
+}
+.slideshow-item {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* main */
+main {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+/* 빠른메뉴 */
+.quickmenu {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+}
+.quickmenu-1 {
+  display: flex;
+  background-color: #FFCE0B;
+  color: #000000;
+}
+.quickmenu-1 li {
+  padding: 30px 20px;
+}
+.quickmenu-2 {
+  display: flex;
+  background-color: #FFFFFF;
+}
+.quickmenu-2 li {
+  padding: 30px 20px;
+}
+.quickmenu h2 {
+  display: none;
+}
+
+/* 새소식, 이벤트 */
+.section-container {
+  display: flex;
+  height: 150px;
+}
+.section {
+  border: 1px solid blue;
+  width: 50%;
+  display: flex;
+}
+
+.section-left {
+  border: 1px solid red;
+  width: 25%;
+  text-align: center;
+  margin: auto 0;
+}
+.section-left h2 {
+  color: #000000;
+  font-size: 20px;
+}
+.section-left a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.section-right {
+  border: 1px solid green;
+  width: 75%;
+  margin: auto 0;
+}
+.section-right-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-right-list:first-child {
+  margin-top: 20px;
+}
+.section-right-list p {
+  margin: auto 0;
+}
+.section-right-list p:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 280px;
+}
+.section-right-list p:last-child {
+  font-size: 12px;
+  color: #929292;
+}

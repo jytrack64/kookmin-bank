@@ -5,81 +5,159 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KB국민은행</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header>
-    <div class="header-area">
+    <div class="header-top">
       <div class="logo">
         <h1>KB국민은행</h1>
+        <img src="./img/logo.png" alt="logo">
       </div>
 
       <div class="nav">
         <ul>
-          <li>개인</li>
-          <li>기업</li>
-          <li>금융상품</li>
-          <li>자산관리</li>
-          <li>부동산</li>
-          <li>퇴직연금</li>
-          <li>카드</li>
-          <li>전체서비스</li>
-          <li>GLOBAL</li>
-          <li>검색</li>
+          <li>
+            <a href="">개인</a>
+          </li>
+          <li class="line">
+            <a href="">기업</a>
+          </li>
+          <li class="line">
+            <a href="">금융상품</a>
+          </li>
+          <li>
+            <a href="">자산관리</a>
+          </li>
+          <li>
+            <a href="">부동산</a>
+          </li>
+          <li>
+            <a href="">퇴직연금</a>
+          </li>
+          <li class="line">
+            <a href="">카드</a>
+          </li>
+          <li class="line">
+            <a href="">전체서비스</a>
+          </li>
+          <li>
+            <a href="">GLOBAL</a>
+          </li>
+          <li>
+            <div class="nav-search">
+              <a href=""> <img src="./img/search.png" alt="search"> </a>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
-  </header>
 
-  <main>
-    <ul>
+    <ul class="header-bottom">
       <li>로그인</li>
       <li>인증센터</li>
     </ul>
+  </header>
 
-    <div class="slideshow">슬라이드쇼</div>
-
-    <h2>빠른메뉴</h2>
-    <ul>
-      <li>전체계좌조회</li>
-      <li>계좌이체</li>
-      <li>빠른조회</li>
-      <li>보안센터</li>
-      <li>고객우대제도</li>
-      <li>소비자보호</li>
-      <li>상담/예약</li>
-      <li>상품공시실</li>
-    </ul>
-
-    <div>
-      <h2>새소식</h2>
-      <a href="">바로가기</a>
+  <div class="slideshow">
+    <div class="slideshow-item">
+      <p>
+        국민의 믿음에 보답하는,<br />
+        든든한 KB국민은행이 되겠습니다.
+      </p>
+      <p>
+        2021 국가고객만족도(NCSI)1위<br />
+        은행권 최다 15회 달성
+      </p>
     </div>
-    <div>
-      <h2>이벤트</h2>
-      <a href="">바로가기</a>
+  </div>
+
+  <main>
+    <div class="quickmenu">
+      <h2>빠른메뉴</h2>
+      <ul class="quickmenu-1">
+        <li>전체계좌조회</li>
+        <li>계좌이체</li>
+        <li>빠른조회</li>
+      </ul>
+      <ul class="quickmenu-2">
+        <li>보안센터</li>
+        <li>고객우대제도</li>
+        <li>소비자보호</li>
+        <li>상담/예약</li>
+        <li>상품공시실</li>
+      </ul>
     </div>
 
-    <div>
-      <h2>인사이트</h2>
-      <div>
-
+    <div class="section-container">
+      <div class="section">
+        <div class="section-left">
+          <h2>새소식</h2>
+          <a href="">바로가기</a>
+        </div>
+        <div class="section-right">
+          <div class="section-right-list">
+            <p>「KB모바일인증서를 이용한 2022년 종합소득세 신고납부」 안내</p>
+            <p>04.18</p>
+          </div>
+          <div class="section-right-list">
+            <p>수신상품 금리 변경 안내</p>
+            <p>04.15</p>
+          </div>
+          <div class="section-right-list">
+            <p>2022년 「전 금융권 공동 숨은 금융자산(예금) 찾아주기 캠페인」 실시</p>
+            <p>04.11</p>
+          </div>
+          </div>
+      </div>
+    
+      <div class="section">
+        <div class="section-left">
+          <h2>이벤트</h2>
+          <a href="">바로가기</a>
+        </div>
+        <div class="section-right">
+          <div class="section-right-list">
+            <p>「KB셀러상품 3총사 Step By Step」 이벤트</p>
+            <p>04.13 ~ 05.31</p>
+          </div>
+          <div class="section-right-list">
+            <p>챗봇은 내 깐부 챗봇 비비와 친해지면 포인트리는 덤!</p>
+            <p>04.01 ~ 06.30</p>
+          </div>
+          <div class="section-right-list">
+            <p>iPhone 자급제는 Liiv M이 딱!</p>
+            <p>03.18 ~ 05.31</p>
+          </div>
+          
+          <p></p>
+          <p></p>
+        </div>
       </div>
     </div>
 
-    <div>
-      <h2>금융상품</h2>
-      <a href="">바로가기</a>
-      <ul>
-        <li>예금</li>
-        <li>펀드</li>
-        <li>대출</li>
-        <li>신탁</li>
-        <li>ISA</li>
-        <li>보험/공제</li>
-        <li>골드</li>
-        <li>외화예금</li>
-      </ul>
+      <div>
+        <h2>인사이트</h2>
+        <div>
+
+        </div>
+      </div>
+
+      <div>
+        <h2>금융상품</h2>
+        <a href="">바로가기</a>
+        <ul>
+          <li>예금</li>
+          <li>펀드</li>
+          <li>대출</li>
+          <li>신탁</li>
+          <li>ISA</li>
+          <li>보험/공제</li>
+          <li>골드</li>
+          <li>외화예금</li>
+        </ul>
+      </div>
     </div>
 
     <div>
