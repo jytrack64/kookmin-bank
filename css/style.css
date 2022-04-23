@@ -4,6 +4,26 @@ body {
   font-size: 14px;
 }
 
+/* 공통 */
+
+/* 바로가기 */
+.baro {
+  text-decoration: none;
+  font-size: 12px;
+  color: #929292;
+}
+.baro::after {
+  content: '>';
+  margin-left: 3px;
+}
+
+h2 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 /* header */
 header {
   width: 980px;
@@ -65,12 +85,17 @@ header .header-bottom {
 
 /* 슬라이드쇼 */
 .slideshow {
-  height: 420px;
-  background-color: #E1EBF4;
+  height: 400px;
+  /* background-color: #E1EBF4; */
+  background-image: url(/img/slideshow.jpg);
+  background-repeat: no-repeat;
 }
 .slideshow-item {
   width: 980px;
   margin: 0 auto;
+}
+.bg {
+  background-color: #E1EBF4;
 }
 
 /* main */
@@ -83,79 +108,245 @@ main {
 /* 빠른메뉴 */
 .quickmenu {
   display: flex;
-  justify-content: center;
   font-size: 17px;
   margin-bottom: 20px;
   box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+  text-align: center;
 }
 .quickmenu-1 {
   display: flex;
   background-color: #FFCE0B;
   color: #000000;
+  flex-grow: 2;
+  flex-basis: 0;
+  height: 70px;
 }
 .quickmenu-1 li {
-  padding: 30px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
 }
 .quickmenu-2 {
   display: flex;
   background-color: #FFFFFF;
+  flex-grow: 3;
+  flex-basis: 0;
+  height: 70px;
 }
 .quickmenu-2 li {
-  padding: 30px 20px;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .quickmenu h2 {
   display: none;
 }
 
-/* 새소식, 이벤트 */
-.section-container {
+/* section1 - 새소식, 이벤트 */
+.section1-container {
   display: flex;
   height: 150px;
+  margin-bottom: 10px;
 }
-.section {
+.section1 {
   border: 1px solid blue;
   width: 50%;
   display: flex;
 }
 
-.section-left {
+.section1-left {
   border: 1px solid red;
   width: 25%;
   text-align: center;
   margin: auto 0;
 }
-.section-left h2 {
-  color: #000000;
-  font-size: 20px;
-}
-.section-left a {
-  text-decoration: none;
-  font-size: 12px;
-}
 
-.section-right {
+.section1-right {
   border: 1px solid green;
   width: 75%;
   margin: auto 0;
 }
-.section-right-list {
+.section1-right-list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.section-right-list:first-child {
+.section1-right-list:first-child {
   margin-top: 20px;
 }
-.section-right-list p {
+.section1-right-list p {
   margin: auto 0;
 }
-.section-right-list p:first-child {
+.section1-right-list p:first-child {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 280px;
 }
-.section-right-list p:last-child {
+.section1-right-list p:last-child {
   font-size: 12px;
   color: #929292;
+}
+
+/* section2 - 인사이트 */
+.section2_container {
+  display: flex;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.section2_container h2 {
+  display: none;
+}
+
+.section2 {
+  border: 1px solid blue;
+  width: 33.3%;
+}
+.section2:hover {
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+  transition: 0.5s;
+}
+
+.section2:nth-child(3) {
+  margin: 0 20px;
+}
+
+/* ??? */
+/* :nth-of-type(1) */
+.section2:nth-child(2) .section2-top {
+  background-color: orange;
+}
+
+.section2:nth-child(3) .section2-top {
+  background-color: #E4CF9C;
+}
+
+.section2-top {
+  height: 50%;
+}
+.section2-bottom {
+  height: 50%;
+}
+
+/* section3 - 금융상품 */
+.section3-container {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 30px 0;
+}
+.section3-left {
+  text-align: center;
+  margin: 0 auto;
+}
+.section3-right {
+  display: flex;
+}
+.section3-right li {
+  width: 100px;
+  height: 75px;
+  text-align: center;
+}
+.section3-right li:last-child {
+  margin: 0;
+}
+.section3-right li div {
+  background-image: url(/img/icon_set2_n.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.section3-right .icon1 {
+  background-position: 0 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon2 {
+  background-position: -52px 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon3 {
+  background-position: -104px 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon4 {
+  background-position: -156px 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon5 {
+  background-position: -208px 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon6 {
+  background-position: -260px 0;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+}
+.section3-right .icon7 {
+  background-position: -312px 0;
+  width: 52px;
+  height: 52px;
+}
+.section3-right .icon8 {
+  background-position: -364px 0;
+  width: 52px;
+  height: 52px;
+}
+
+/* section4 - 금융사고예방, 소비자권익보호 */
+.section4-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.section4-container h2 {
+  font-size: 18px;
+}
+
+.section4-left-top {
+  display: flex;
+  border: 1px solid red;
+}
+
+.section4-left-top ul {
+  display: flex;
+}
+.section4-left-top li {
+  margin-right: 10px;
+  border: 1px solid blue;
+  position: relative;
+}
+.section4-left-top p:first-child {
+  margin-bottom: 5px;
+}
+.section4-left-top p:last-child {
+  color: #888;
+}
+.section4-left-top p:first-child::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  width: 3px;
+  height: 3px;
+  background-color: #acacac;
+  border-radius: 50%;
+}
+
+.section4-left-bottom {
+  display: flex;
+}
+.section4-left-bottom ul {
+  display: flex;
+}
+
+.section4-right {
+  border: 1px solid red;
 }

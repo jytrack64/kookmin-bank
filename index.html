@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,73 +8,80 @@
   <title>KB국민은행</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/main.css"> 
 </head>
+
 <body>
-  <header>
-    <div class="header-top">
-      <div class="logo">
-        <h1>KB국민은행</h1>
-        <img src="./img/logo.png" alt="logo">
+  <div class="bg">
+    <header>
+      <!-- 헤더 메뉴 -->
+      <div class="header-top">
+        <div class="logo">
+          <h1>KB국민은행</h1>
+          <img src="./img/logo.png" alt="logo">
+        </div>
+
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="">개인</a>
+            </li>
+            <li class="line">
+              <a href="">기업</a>
+            </li>
+            <li class="line">
+              <a href="">금융상품</a>
+            </li>
+            <li>
+              <a href="">자산관리</a>
+            </li>
+            <li>
+              <a href="">부동산</a>
+            </li>
+            <li>
+              <a href="">퇴직연금</a>
+            </li>
+            <li class="line">
+              <a href="">카드</a>
+            </li>
+            <li class="line">
+              <a href="">전체서비스</a>
+            </li>
+            <li>
+              <a href="">GLOBAL</a>
+            </li>
+            <li>
+              <div class="nav-search">
+                <a href=""> <img src="./img/search.png" alt="search"> </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="nav">
-        <ul>
-          <li>
-            <a href="">개인</a>
-          </li>
-          <li class="line">
-            <a href="">기업</a>
-          </li>
-          <li class="line">
-            <a href="">금융상품</a>
-          </li>
-          <li>
-            <a href="">자산관리</a>
-          </li>
-          <li>
-            <a href="">부동산</a>
-          </li>
-          <li>
-            <a href="">퇴직연금</a>
-          </li>
-          <li class="line">
-            <a href="">카드</a>
-          </li>
-          <li class="line">
-            <a href="">전체서비스</a>
-          </li>
-          <li>
-            <a href="">GLOBAL</a>
-          </li>
-          <li>
-            <div class="nav-search">
-              <a href=""> <img src="./img/search.png" alt="search"> </a>
-            </div>
-          </li>
-        </ul>
+      <ul class="header-bottom">
+        <li>로그인</li>
+        <li>인증센터</li>
+      </ul>
+    </header>
+
+    <!-- 슬라이드쇼 -->
+    <div class="slideshow">
+      <div class="slideshow-item">
+        <p>
+          국민의 믿음에 보답하는,<br />
+          든든한 KB국민은행이 되겠습니다.
+        </p>
+        <p>
+          2021 국가고객만족도(NCSI)1위<br />
+          은행권 최다 15회 달성
+        </p>
       </div>
-    </div>
-
-    <ul class="header-bottom">
-      <li>로그인</li>
-      <li>인증센터</li>
-    </ul>
-  </header>
-
-  <div class="slideshow">
-    <div class="slideshow-item">
-      <p>
-        국민의 믿음에 보답하는,<br />
-        든든한 KB국민은행이 되겠습니다.
-      </p>
-      <p>
-        2021 국가고객만족도(NCSI)1위<br />
-        은행권 최다 15회 달성
-      </p>
     </div>
   </div>
 
   <main>
+    <!-- 빠른메뉴 -->
     <div class="quickmenu">
       <h2>빠른메뉴</h2>
       <ul class="quickmenu-1">
@@ -90,86 +98,164 @@
       </ul>
     </div>
 
-    <div class="section-container">
-      <div class="section">
-        <div class="section-left">
+    <!-- 새소식, 이벤트 -->
+    <div class="section1-container">
+      <div class="section1">
+        <div class="section1-left">
           <h2>새소식</h2>
-          <a href="">바로가기</a>
+          <a class="baro" href="">바로가기</a>
         </div>
-        <div class="section-right">
-          <div class="section-right-list">
+        <div class="section1-right">
+          <div class="section1-right-list">
             <p>「KB모바일인증서를 이용한 2022년 종합소득세 신고납부」 안내</p>
             <p>04.18</p>
           </div>
-          <div class="section-right-list">
+          <div class="section1-right-list">
             <p>수신상품 금리 변경 안내</p>
             <p>04.15</p>
           </div>
-          <div class="section-right-list">
+          <div class="section1-right-list">
             <p>2022년 「전 금융권 공동 숨은 금융자산(예금) 찾아주기 캠페인」 실시</p>
             <p>04.11</p>
           </div>
-          </div>
-      </div>
-    
-      <div class="section">
-        <div class="section-left">
-          <h2>이벤트</h2>
-          <a href="">바로가기</a>
         </div>
-        <div class="section-right">
-          <div class="section-right-list">
+      </div>
+
+      <div class="section1">
+        <div class="section1-left">
+          <h2>이벤트</h2>
+          <a class="baro" href="">바로가기</a>
+        </div>
+        <div class="section1-right">
+          <div class="section1-right-list">
             <p>「KB셀러상품 3총사 Step By Step」 이벤트</p>
             <p>04.13 ~ 05.31</p>
           </div>
-          <div class="section-right-list">
+          <div class="section1-right-list">
             <p>챗봇은 내 깐부 챗봇 비비와 친해지면 포인트리는 덤!</p>
             <p>04.01 ~ 06.30</p>
           </div>
-          <div class="section-right-list">
+          <div class="section1-right-list">
             <p>iPhone 자급제는 Liiv M이 딱!</p>
             <p>03.18 ~ 05.31</p>
           </div>
-          
-          <p></p>
-          <p></p>
         </div>
       </div>
     </div>
 
-      <div>
-        <h2>인사이트</h2>
-        <div>
-
+    <!-- 인사이트 -->
+    <div class="section2_container">
+      <h2>인사이트</h2>
+      <div class="section2">
+        <div class="section2-top"></div>
+        <div class="section2-bottom">
+          <p>Young Youth 적금</p>
+          <p>
+            나와 내아이를 위한 상품<br />
+            다양한 부가서비스까지 한가득
+          </p>
         </div>
       </div>
 
-      <div>
+      <div class="section2">
+        <div class="section2-top"></div>
+        <div class="section2-bottom">
+          <p>KB Star 정기예금</p>
+          <p>
+            Digital KB의 대표 정기예금<br />
+            알아서 자동재예치/자동해지
+          </p>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="section2-top">
+        </div>
+        <div class="section2-bottom">
+          <p>KB 마이핏통장</p>
+          <p>
+            높은 이율! 수수료 혜택!<br />
+            목적별 자금관리를 통장 하나로!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 금융상품 -->
+    <div class="section3-container">
+      <div class="section3-left">
         <h2>금융상품</h2>
-        <a href="">바로가기</a>
-        <ul>
-          <li>예금</li>
-          <li>펀드</li>
-          <li>대출</li>
-          <li>신탁</li>
-          <li>ISA</li>
-          <li>보험/공제</li>
-          <li>골드</li>
-          <li>외화예금</li>
-        </ul>
+        <a class="baro" href="">바로가기</a>
       </div>
+      
+      <ul class="section3-right">
+        <li>
+          <div class="icon1"></div>
+          예금
+        </li>
+        <li>
+          <div class="icon2"></div>
+          펀드
+        </li>
+        <li>
+          <div class="icon3"></div>
+          대출
+        </li>
+        <li>
+          <div class="icon4"></div>
+          신탁
+        </li>
+        <li>
+          <div class="icon5"></div>
+          ISA
+        </li>
+        <li>
+          <div class="icon6"></div>
+          보험/공제
+        </li>
+        <li>
+          <div class="icon7"></div>
+          골드
+        </li>
+        <li>
+          <div class="icon8"></div>
+          외화예금
+        </li>
+      </ul>
     </div>
 
-    <div>
-      <div>
-        <h2>금융사고예방</h2>
+    <!-- 금융사고예방 -->
+    <div class="section4-container">
+      <div class="section4-left">
+        <div class="section4-left-top">
+          <h2>금융사고예방</h2>
+          <ul>
+            <li>
+              <p>전자금융사기예방 서비스</p>
+              <p>각종 금융사기수법에 한층 강화된 다양한 전자금융사기예방 서비스로 안전한 인터넷뱅킹 사용이 가능합니다.</p>
+            </li>
+            <li>
+              <p>통장(카드) 매매·양도는 불법</p>
+              <p>고객님의 자산을 보호하고 금융사기를 예방하기 위한 최선의 방법은 대포통장 근절입니다.</p>
+            </li>
+            <li>
+              <p>사진촬영·QR스캔 절대금지</p>
+              <p>타인이 OTP/보안카드 번호를 요구 (2개 초과) 하는 경우는 금융사기이니 절대 응하지 마십시오.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section4-left-bottom">
+          <h2>소비자권익보호</h2>
+          <ul>
+            <li>금융감독원 바로가기</li>
+            <li>미수령주식 찾아주기 캠페인</li>
+            <li>비교조회서비스</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <h2>소비자권익보호</h2>
-      </div>
-
-      <div>
+      <div class="section4-right">
         KB모바일인증서
       </div>
     </div>
@@ -216,4 +302,5 @@
     </div>
   </footer>
 </body>
+
 </html>
