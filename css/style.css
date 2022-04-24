@@ -28,7 +28,7 @@ h2 {
 header {
   width: 980px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .header-top {
   height: 35px;
@@ -74,25 +74,26 @@ header {
 /* 로그인, 인증센터 */
 header .header-bottom {
   display: flex;
-  margin-left: 30px;
   margin-bottom: 10px;
+  /* border: 1px solid red; */
 }
 .header-bottom li {
   border: 1px solid #DDDDDD;
   background-color: #FFFFFF;
   padding: 7px;
 }
+.header-bottom li:first-child {
+  margin-left: 30px;
+}
 
 /* 슬라이드쇼 */
-.slideshow {
-  height: 400px;
-  /* background-color: #E1EBF4; */
-  background-image: url(/img/slideshow.jpg);
-  background-repeat: no-repeat;
-}
 .slideshow-item {
   width: 980px;
+  height: 400px;
   margin: 0 auto;
+  background-image: url(/img/slideshow.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .bg {
   background-color: #E1EBF4;
@@ -102,7 +103,7 @@ header .header-bottom {
 main {
   width: 980px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* 빠른메뉴 */
@@ -115,27 +116,32 @@ main {
 }
 .quickmenu-1 {
   display: flex;
-  background-color: #FFCE0B;
-  color: #000000;
   flex-grow: 2;
   flex-basis: 0;
   height: 70px;
+  background-color: #FFCE0B;
+  color: #000000;
 }
 .quickmenu-1 li {
+  display: flex;
   flex-grow: 1;
   flex-basis: 0;
   align-items: center;
+  justify-content: center;
 }
 .quickmenu-2 {
   display: flex;
-  background-color: #FFFFFF;
   flex-grow: 3;
   flex-basis: 0;
   height: 70px;
+  background-color: #FFFFFF;
 }
 .quickmenu-2 li {
+  display: flex;
   flex-grow: 1;
   flex-basis: 0;
+  align-items: center;
+  justify-content: center;
 }
 .quickmenu h2 {
   display: none;
@@ -148,20 +154,20 @@ main {
   margin-bottom: 10px;
 }
 .section1 {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 50%;
   display: flex;
 }
 
 .section1-left {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 25%;
   text-align: center;
   margin: auto 0;
 }
 
 .section1-right {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 75%;
   margin: auto 0;
 }
@@ -199,11 +205,11 @@ main {
 }
 
 .section2 {
-  border: 1px solid blue;
+  border: 1px solid #DDDDDD;
   width: 33.3%;
 }
 .section2:hover {
-  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, .3);
   transition: 0.5s;
 }
 
@@ -212,7 +218,7 @@ main {
 }
 
 /* ??? */
-/* :nth-of-type(1) */
+/* nth-of-type(1) */
 .section2:nth-child(2) .section2-top {
   background-color: orange;
 }
